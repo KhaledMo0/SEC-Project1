@@ -1,0 +1,461 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+.contain{
+    overflow: auto;
+    overflow-y: hidden;
+ 
+}
+/* ---------------------------------------------------------------------------------------------- */
+/* head  */
+.head{
+    width: 100%;
+height: 36px;
+background-color:rgb(58, 56, 69);
+overflow: auto;
+opacity: 0.95;
+position: fixed;
+z-index: 1000;
+}
+h1{
+    color: #fff;
+    font-size: 20px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+.list_one{
+    margin-top: 7px;
+float: right;
+list-style: none;
+
+
+}
+li{
+    display: inline-block;
+    margin-right: 25px;
+}
+/* ---------------------------------------------------------------------------------------------- */
+/* f-background  */
+.first_background{
+width: 100%;
+height: 100vh;
+background-image: url(../imges/pexels-hasan-albari-1229861.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.text_fb1{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.fb_h2{
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+
+}
+.fb_p1{
+    text-align: center;
+    color: white;
+}
+.btn1 {
+    width: 150px;
+    height: 48px;
+    background-color: rgb(238, 234, 234);
+    border-radius: 11px;
+    border: 0;
+    font-size: 19px;
+    margin-left: 375px;
+    margin-top: 10px;
+    
+}
+
+.btn2 {
+    width: 150px;
+    height: 48px;
+    background-color: rgb(72, 69, 226);
+    border-radius: 11px;
+    border: 0;
+    font-size: 19px;
+    margin-left: 15px;
+    color: #fff;
+}
+.btn1:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+.btn2:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------------------------------------- */
+/* welcome to website  */
+.h2_wtw{
+    text-align: center;
+    padding: 5%;
+    font-size: 40px;
+    color: black
+}
+.wtw{
+    width: 100%;
+    height: 100vh; 
+    background-color: whitesmoke;
+    overflow: auto;
+
+}
+.setting ,.our_magic, .info{
+    top: 15%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    margin:2.5%; 
+    width: 28%;
+    height: 35%;
+    border: 1px solid black;
+    float: left;
+    transition: 2s;
+    background-color: #fff;
+}
+.setting:hover ,.our_magic:hover, .info:hover{
+    opacity: 0.4; 
+}
+.icon_wtw{
+    font-size: 50px;
+    color: rgb(62, 152, 255);
+    margin-left:45% ;
+    margin-top: 5%;
+    margin-right: 10px;
+    
+}
+.h2s_wtw{
+    margin-left: 35%;
+    margin-top:7% ;
+    font-size: 35px;
+}
+.h2m_wtw{
+    margin-left: 28%;
+    margin-top:7% ;
+    font-size: 35px;
+}
+.h2i_wtw{
+    margin-left: 40%;
+    margin-top:7% ;
+    font-size: 35px;
+
+}
+.span_s_wtw{
+display: block;
+opacity: 0.6;
+margin-top:2%;
+margin-left: 12%;
+}
+.span_m_wtw{
+    display: block;
+    opacity: 0.6;
+    margin-top:2%;
+    margin-left: 20%;
+    }
+    .span_i_wtw{
+        display: block;
+        opacity: 0.6;
+        margin-top:2%;
+        margin-left: 25%;
+        }
+
+.a_wtw{
+    display: block;
+    margin-top: 3%;
+    margin-left:40% ;
+    color: rgb(62, 152, 255) ;
+}
+/*--------------------------------------------------------------------------------------------------*/
+/*what we offers*/
+.what_we_offer{
+    width: 100%;
+    height: 100vh;
+   
+    overflow: auto;
+    overflow-x:hidden ;
+    background-color: whitesmoke;
+    
+}
+.hs_what_we_offer{
+
+width: 500px;
+height: 80px;
+margin: 5% 40%;
+}
+.product{
+margin-top: -5%;
+}
+.web_dev , .cyber ,.app_dev ,.AI{
+    width: 350px;
+   height: 150px;
+    border: 3px solid ;
+    float: left;
+   margin-left: 17%;
+   margin-right: 5%;
+   margin-top: 5%;
+   position: relative;
+   cursor: pointer;
+   
+}
+.iwwo {
+margin: 10% 45% ;
+font-size: 40px;
+color: brown;
+}
+.AI .h2_prouduct{
+    padding-left: 15px;
+}
+.h2_prouduct{
+   text-align: center;
+   margin-top: -3%;
+}
+.web_dev::after , .cyber::after ,.app_dev::after ,.AI::after{
+    content: "";
+    position: absolute;
+
+    width: 0 ;
+    height: 0 ;
+
+    top: 0 ;
+    left: 0 ;
+
+    background-color: rgb(4, 4, 4);
+    opacity: 0 ;
+}
+.web_dev:hover:after , .cyber:hover:after ,.app_dev:hover:after ,.AI:hover:after{
+    width:100%;
+    height:100%;
+    opacity: 0.5;
+    transition: 1s;
+   
+  
+}
+
+.web_dev:hover .h2_prouduct , .cyber:hover .h2_prouduct  ,.app_dev:hover .h2_prouduct ,.AI:hover .h2_prouduct {
+    color: rgb(255, 170, 0);
+   
+
+}
+/*--------------------------------------------------------------------------------------------------*/
+/* our team  */
+.our_team{
+   background-image: url(../imges/team.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+    width: 100%;
+height: 100vh;
+    overflow: auto;
+    overflow-y:hidden ;
+    
+}
+.h2_our_team{
+    text-align: center;
+    padding-top: 5%;
+    font-size: 40px;
+    color: aliceblue;
+}
+.item{
+    display: block;
+    float: left;
+    width:30%;
+    background-color:rgba(104, 79, 79, 0.693);
+    padding: 17px 13px;
+    text-align: center;
+    position: relative;
+    margin: 0 1%;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+.img_our_team{
+    background-color: rgba(106, 57, 57, 0.379);
+    width: 90%;
+    margin: auto;
+    position: relative; 
+}
+.team_overley{
+    position: absolute;
+    top: 0 ;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+.team_overley a {
+    display: block;
+    width:40px;
+    height:40px;
+    background-color: rgb(32, 120, 235);
+    color: #fff;
+    margin-left: auto;
+}
+.team_overley a  i {
+    line-height: 40px;
+}
+.names_ourteam {
+    padding: 10px 0;
+    
+}
+.marks , .khaled ,.bill{
+    color: rgb(22, 22, 22);
+    font-size: 14px;
+}
+/*--------------------------------------------------------------------------*/
+/* money plane  */
+.prices{
+width: 100%;
+height: 100vh;
+
+
+background-image: url(../imges/money.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+ overflow: auto;
+ text-align: center;
+
+
+
+}
+.prices .h2_pr {
+  margin-top: 5%;
+
+font-size: 34px;
+color: white;
+font-weight: bold;
+border:3px solid black;
+display: inline-block;    
+background-color:rgb(30, 30, 30);
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.money-frame{
+    margin-left: 28%;
+}
+.single-price{ 
+    width: 21%;
+   
+background: rgb(30, 30, 30);
+float: left;
+margin-top: 5%;
+box-shadow:  1px 1px 20px rgba(0, 0, 0, 0.5);
+text-align: center;
+transition: 0.9s;
+
+}
+
+.price-decoration{
+width: 35%;
+height: 35%;
+border-radius: 50%;
+border: 2px solid rgb(218, 67, 87);
+margin: 5% auto 0 auto;
+text-align: center;
+
+
+} 
+.deals{
+
+margin-top: 10%;
+
+}
+
+.h2_singlePrice{
+    font-size: 18px;
+    color: #fff;
+    line-height: 3;
+    text-transform: uppercase; 
+}
+.price-decoration{
+font-size: 38px;
+color: #fff;
+
+}
+.deals h4{
+    margin-top: 5%;
+font-size: 14px;
+font-weight: normal;
+text-align: center;
+color: #fff;
+line-height: 1;
+
+}  
+  .single-price a{
+        text-decoration: none;
+        background: rgb(218, 67, 87);
+        color: #fff;
+    padding: 10px 60px;
+    display: inline-block;
+    margin: 10% auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+
+.single-price:hover{
+    background: rgb(218, 67, 87);
+    color: #fff;
+    box-shadow: 0 0 15% rgba(0,0,0,1 );
+    z-index: 1;
+    border-radius: 25px;
+    
+    
+    
+     }
+     .single-price:hover .price-decoration{
+    border-color: #fff;
+    
+     } 
+
+     .single-price:hover a{
+background:  rgb(30, 30, 30);
+color: #fff;
+     }
+     /*---------------------------------------------------------------------------------------*/
+     /* footer  */
+     .footerr{
+        background-image: url(../imges/black\ wall.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+        padding: 7% 15%;
+        text-align: center;
+     }
+    .logo-footer{
+margin-left: -100%;
+margin-bottom: 2%;
+    }
+
+    .contact-logo{
+   margin-left: 40%;
+        font-size: 50px;
+        margin-top: -10%;
+    }
+.h3_footer{
+
+    padding-left: 500px;
+   color: #fff;
+   font-size: 35px;
+}
+.h3_foot{
+
+margin-top: -200px;
+}
